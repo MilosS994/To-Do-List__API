@@ -23,6 +23,10 @@ const userSchema = new mongoose.Schema(
       lowercase: true,
       match: [/\S+\@\.\S+/, "Please enter a valid email address"],
     },
+    todoCount: {
+      type: Number,
+      default: 0,
+    },
   },
   { timestamps: true }
 );
