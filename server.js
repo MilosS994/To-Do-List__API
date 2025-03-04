@@ -1,4 +1,5 @@
 import express from "express";
+import connectDB from "./database/mongodb.js";
 
 import { PORT } from "./config/env.js";
 
@@ -16,6 +17,8 @@ app.get("/", (req, res) => {
   res.send("Server is running!");
 });
 
-app.listen(PORT, () => {
+app.listen(PORT, async () => {
   console.log(`Server is running on port ${PORT}`);
+
+  await connectDB();
 });
