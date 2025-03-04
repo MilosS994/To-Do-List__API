@@ -1,0 +1,28 @@
+{
+  "name": "to-do-list__api",
+  "version": "1.0.0",
+  "description": "The To-Do List API is a RESTful API that allows users to manage their tasks. Users can create, read, update, and delete tasks through a simple API.",
+  "main": "server.js",
+  "type": "module",
+  "scripts": {
+    "dev": "nodemon server.js",
+    "start": "node server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/MilosS994/To-Do-List__API.git"
+  },
+  "keywords": [
+    "mongoDB",
+    "express",
+    "node",
+    "rest",
+    "api"
+  ],
+  "author": "Milos",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/MilosS994/To-Do-List__API/issues"
+  },
+  "homepage": "https://github.com/MilosS994/To-Do-List__API#readme"
+}
