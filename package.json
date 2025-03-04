@@ -24,5 +24,14 @@
   "bugs": {
     "url": "https://github.com/MilosS994/To-Do-List__API/issues"
   },
-  "homepage": "https://github.com/MilosS994/To-Do-List__API#readme"
+  "homepage": "https://github.com/MilosS994/To-Do-List__API#readme",
+  "dependencies": {
+    "dotenv": "^16.4.7",
+    "express": "^4.21.2",
+    "joi": "^17.13.3",
+    "mongoose": "^8.12.0"
+  },
+  "devDependencies": {
+    "nodemon": "^3.1.9"
+  }
 }
