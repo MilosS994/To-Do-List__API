@@ -1,5 +1,7 @@
 import express from "express";
+import cookieParser from "cookie-parser";
 import connectDB from "./database/mongodb.js";
+import errorMiddleware from "./middleware/error.middleware.js";
 
 import { PORT } from "./config/env.js";
 
@@ -12,6 +14,8 @@ const app = express();
 app.use("/api/v1/auth", authRouter);
 app.use("/api/v1/users", userRouter);
 app.use("/api/v1/todos", todosRouter);
+
+app.use(errorMiddleware);
 
 app.get("/", (req, res) => {
   res.send("Server is running!");
