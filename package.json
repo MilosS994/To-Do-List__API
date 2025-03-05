@@ -27,6 +27,7 @@
   "homepage": "https://github.com/MilosS994/To-Do-List__API#readme",
   "dependencies": {
     "bcryptjs": "^3.0.2",
+    "cookie-parser": "^1.4.7",
     "dotenv": "^16.4.7",
     "express": "^4.21.2",
     "joi": "^17.13.3",
